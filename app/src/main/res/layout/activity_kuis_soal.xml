@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kuis_soal"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="20dp">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:background="@color/transparanWhite">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_gambar"
+                    android:layout_width="168dp"
+                    android:layout_height="104dp"
+                    android:src="@drawable/satu" />
+                <TextView
+                    android:id="@+id/quis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold|normal"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pilihA"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorBlack"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pilihB"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorBlack"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pilihC"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorBlack"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pilihD"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorBlack"/>
+
+            </RadioGroup>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center">
+                <Button
+                    android:onClick="next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lanjut"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorOrange"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

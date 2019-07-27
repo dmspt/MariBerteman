@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Mari Berteman</string>
+    <string name="instruksi">Petunjuk : </string>
+    <string name="petunjuk">1.\t Uji Pemahaman ini terdiri atas 10 soal pilihan ganda dengan KKM 70.\n  2.\t Kilik tombol pilihan untuk menjawabnya.\n  3.\t Kemudian klick tombol mulai untuk mengerjakan.</string>
 </resources>
